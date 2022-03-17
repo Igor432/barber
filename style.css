@@ -29,7 +29,7 @@ a {
 }
 
 a:hover {
-    color: var(--brand-coral);
+    color: cornflowerblue;
 }
 
 .nav {
@@ -37,7 +37,6 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background: linear-gradient(180deg, #e6b39e50 0%, #ffff 100%);
 }
 
 .logo {
@@ -47,7 +46,7 @@ a:hover {
 }
 
 .best-word {
-    color: rgba(212, 105, 66, 0.753);
+    color: cornflowerblue;
 }
 
 .logo-link {
@@ -127,7 +126,7 @@ a:hover {
         margin-right: auto;
         justify-content: center;
         padding-left: 0 !important;
-        padding-right: 56px;
+        padding-right: 46px;
     }
     .contacts {
         padding-right: 0;
@@ -221,6 +220,10 @@ a:hover {
     justify-content: center;
     padding-top: 220px;
     padding-bottom: 220px;
+    background-image: url(./img/josh-sorenson-FvKpUZCbZ-s-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .order-button {
@@ -231,21 +234,21 @@ a:hover {
     color: white;
     background-color: var(--secondary-bg--mode-dark);
     cursor: pointer;
-    border: transparent;
     font-size: 22px;
     transform: scale(1);
     animation: pulse-black 2s infinite;
+    border: transparent;
 }
 
 .order-button:hover {
-    background-color: var(--brand-coral);
+    background-color: cornflowerblue;
     color: var(--secondary-bg--mode-dark);
 }
 
 .hero-title {
+    color: #f2f2f2;
     font-family: var(--secondary-font);
     font-size: 55px;
-    text-shadow: 5px 2px #e4e4e4;
 }
 
 .hero-slogan {
@@ -259,7 +262,7 @@ a:hover {
 .about {
     display: flex;
     padding-bottom: 50px;
-    background: linear-gradient(180deg, #fff 0%, #c48d7650 100%);
+    background: linear-gradient(180deg, #beb9b750 0%, #fff 100%);
 }
 
 .about-info {
@@ -394,7 +397,7 @@ q {
     display: flex;
     padding-top: 50px;
     padding-bottom: 50px;
-    background: linear-gradient(180deg, #c48d7650 0%, #fff 100%);
+    background: linear-gradient(180deg, #beb9b750 100% 0%, #fff 100%);
 }
 
 .slide-about {
@@ -416,8 +419,13 @@ q {
 }
 
 .quality-list {
-    margin-top: 70px;
+    margin-top: 30px;
     font-size: 26px;
+}
+
+.quality-icon {
+    display: block;
+    margin-top: 15px;
 }
 
 .slider {
@@ -425,7 +433,7 @@ q {
 }
 
 .mySlides {
-    display: none
+    display: none;
 }
 
 img {
@@ -530,19 +538,19 @@ img {
 
 @-webkit-keyframes fade {
     from {
-        opacity: .4
+        opacity: 0.4;
     }
     to {
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: 0.4;
     }
     to {
-        opacity: 1
+        opacity: 1;
     }
 }
 
@@ -553,7 +561,7 @@ img {
     .prev,
     .next,
     .text {
-        font-size: 11px
+        font-size: 11px;
     }
 }
 
