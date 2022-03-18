@@ -51,7 +51,7 @@ a:hover {
 
 .logo-link {
     text-decoration: none;
-    color: #172530dc;
+    color: #172530e0;
     font-size: 30px;
 }
 
@@ -80,7 +80,7 @@ a:hover {
 .hamburger>div {
     width: 30px;
     height: 3px;
-    background: #a3a3a7c5;
+    background: #4a4a52d5;
     margin: 5px;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -100,7 +100,7 @@ a:hover {
 }
 
 .menu-link {
-    color: #11161ac4;
+    color: #172530e0;
     font-size: 22px;
     opacity: 0.75;
     position: relative;
@@ -109,7 +109,7 @@ a:hover {
 }
 
 .contacts-link {
-    color: #495863a8;
+    color: #172530e0;
     font-size: 16px;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -126,7 +126,7 @@ a:hover {
         margin-right: auto;
         justify-content: center;
         padding-left: 0 !important;
-        padding-right: 46px;
+        padding-right: 26px;
     }
     .contacts {
         padding-right: 0;
@@ -134,7 +134,7 @@ a:hover {
     }
     .hamburger {
         display: block;
-        background-color: white;
+        background-color: transparent;
         border: none;
     }
     .nav-ul,
@@ -193,6 +193,13 @@ a:hover {
     .slider {
         padding-right: 0px !important;
     }
+
+    .footer-container {
+        justify-content: center;
+        text-align: center;
+        padding-left: 0px !important;
+       
+    }
 }
 
 .logo {
@@ -212,6 +219,13 @@ a:hover {
     text-decoration: none;
 }
 
+.nav-hero {
+    background-image: url(./img/josh-sorenson-FvKpUZCbZ-s-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 
 /* HERO */
 
@@ -220,7 +234,7 @@ a:hover {
     justify-content: center;
     padding-top: 220px;
     padding-bottom: 220px;
-    background-image: url(./img/josh-sorenson-FvKpUZCbZ-s-unsplash.jpg);
+  /*  background-image: url(./img/josh-sorenson-FvKpUZCbZ-s-unsplash.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -252,7 +266,7 @@ a:hover {
 }
 
 .hero-slogan {
-    color: #5d5d68f3;
+    color: #6464aa;
     margin-bottom: 40px;
 }
 
@@ -262,7 +276,7 @@ a:hover {
 .about {
     display: flex;
     padding-bottom: 50px;
-    background: linear-gradient(180deg, #beb9b750 0%, #fff 100%);
+  /*  background: linear-gradient(180deg, #beb9b750 0%, #fff 100%); */
 }
 
 .about-info {
@@ -391,13 +405,46 @@ q {
 }
 
 
+/* FOOTER */
+
+.footer-container {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  /*  background-image: url(./img/allyson-carter-ygeOg_j4uhQ-unsplash.jpg); */
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: linear-gradient(180deg, #fff 0%, #beb9b750 100%);
+}
+
+.address-list {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.footer-link {
+    margin-top: 20px;
+}
+
+.footer-link>a {
+    text-decoration: none;
+color: #172530e0;;
+    
+}
+
+.footer-link>a:hover {
+    color: cornflowerblue;
+}
+
+
 /* SLIDER */
 
 .slide-info {
     display: flex;
     padding-top: 50px;
     padding-bottom: 50px;
-    background: linear-gradient(180deg, #beb9b750 100% 0%, #fff 100%);
+  /*  background: linear-gradient(180deg, #beb9b750 100% 0%, #fff 100%); */
 }
 
 .slide-about {
