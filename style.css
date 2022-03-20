@@ -4,6 +4,8 @@
     --secondary-bg--mode-dark: #111319;
     --secondary-font: "Raleway", sans-serif;
     --brand-grey: rgba(114, 104, 104, 0.719);
+    --main-font: "Open Sans", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
 }
 
 * {
@@ -17,6 +19,7 @@
 html,
 body {
     height: 100%;
+    font-family: var(--main-font);
 }
 
 .container {
@@ -25,11 +28,15 @@ body {
 }
 
 a {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: var(--main-font);
 }
 
 a:hover {
     color: cornflowerblue;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
 }
 
 .nav {
@@ -40,9 +47,12 @@ a:hover {
 }
 
 .logo {
-    padding-left: 25px;
+ 
+    padding-left: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
+    flex-basis: 33%;
+ 
 }
 
 .best-word {
@@ -62,7 +72,9 @@ a:hover {
     gap: 40px;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0;
+    flex-basis: 33%;
+  /*
+    margin-right: 180px; */
 }
 
 .contacts-list {
@@ -93,6 +105,7 @@ a:hover {
 .contacts {
     padding-right: 25px;
     gap: 5px;
+    flex-basis: 33%;
 }
 
 .hidden-contacts {
@@ -101,16 +114,18 @@ a:hover {
 
 .menu-link {
     color: #172530e0;
-    font-size: 22px;
-    opacity: 0.75;
+    font-size: 16px;
+    opacity: 0.95;
     position: relative;
     padding-top: 25px;
     padding-bottom: 25px;
+    font-weight: 500;
 }
 
 .contacts-link {
     color: #172530e0;
     font-size: 16px;
+    font-weight: 500;
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -127,6 +142,7 @@ a:hover {
         justify-content: center;
         padding-left: 0 !important;
         padding-right: 26px;
+        flex-basis: auto;
     }
     .contacts {
         padding-right: 0;
@@ -143,6 +159,7 @@ a:hover {
     .contacts-list {
         display: none !important;
         flex-direction: column !important;
+        margin: 0;
     }
     .nav-ul.show {
         display: flex !important;
@@ -170,10 +187,15 @@ a:hover {
         flex-direction: column;
     }
 
+    .about {
+      padding: 50px !important;
+    }
+
     .about-info {
         line-height: 1.6;
-        padding-left: 20px !important;
-        padding-right: 20px !important;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+        padding-top: 50px !important;
     }
 
 .about-photo {
@@ -186,14 +208,14 @@ a:hover {
         width: 180px;
         height: auto;
         padding-left: 0px !important;
-        padding-top: 20px !important;
+    
     }
 
     .about-img2 {
         width: 180px;
         height: auto;
         padding-left:0 !important;
-        padding-top: 20px !important;
+   
     }
     .woman-list>.price-inner-name::after,
     .man-list>.price-inner-name::after {
@@ -209,9 +231,10 @@ a:hover {
 
 
     .about-text {
-        line-height: 1.4;
-        font-size: 18px;
+        line-height: 1.8;
+        font-size: 16px;
         padding-bottom: 35px;
+        font-weight: 200;
         
     }
     .slide-info {
@@ -247,7 +270,7 @@ a:hover {
 }
 
 .nav-hero {
-    background-image: url(./img/josh-sorenson-FvKpUZCbZ-s-unsplash.jpg);
+    background-image: url(./img/adam-winger-KVVjmb3IIL8-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -271,7 +294,7 @@ a:hover {
     padding: 10px 15px 10px 15px;
     border-radius: 25px;
     height: 55px;
-    width: 90px;
+    width: 190px;
     color: white;
     background-color: var(--secondary-bg--mode-dark);
     cursor: pointer;
@@ -287,14 +310,19 @@ a:hover {
 }
 
 .hero-title {
-    color: #f2f2f2;
+    color: #df6f13;
     font-family: var(--secondary-font);
     font-size: 55px;
 }
 
 .hero-slogan {
-    color: #6464aa;
+    color: #3f454d;
     margin-bottom: 40px;
+}
+
+.style {
+    background-color: #df6f13;
+    
 }
 
 
@@ -302,7 +330,8 @@ a:hover {
 
 .about {
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 110px;
+    padding-top: 110px;
    
   /*  background: linear-gradient(180deg, #beb9b750 0%, #fff 100%); */
 }
@@ -326,12 +355,12 @@ a:hover {
 
 .about-img {
     padding-left: 20px;
-    padding-top: 135px;
+  
 }
 
 .about-img2 {
     padding-left: 20px;
-    padding-top: 150px;
+   
 }
 
 
@@ -346,16 +375,19 @@ a:hover {
 */
 
 .about-title {
-    font-size: 18px;
-    font-style: bold;
-    padding-top: 35px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    
+  
 }
 
 .quote {
     font-style: italic;
     color: #090b13;
     padding-right: 50px;
-    padding-top: 40px;
+    padding-top: 20px;
+    font-weight: lighter;
 }
 
 q {
@@ -363,8 +395,9 @@ q {
 }
 
 .about-text {
-    padding-top: 40px;
+    padding-top: 20px;
     color: #090b138f;
+    font-weight: 200;
 }
 
 
@@ -372,22 +405,22 @@ q {
 
 .prices-container {
     text-align: center;
-    filter: grayscale(80%);
-    background-image: url(./img/andrea-donato-MNu0n-3BIKs-unsplash.jpg);
-    background-position: center;
+   
+    background-image: url(./img/giorgio-trovato-X465FlMcwjg-unsplash.jpg);
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 110px;
+    padding-top: 110px;
 
 }
 
 .prices-title {
     display: block;
-    color: white;
+    color: #ffffff;
     margin: 0;
 }
 
@@ -416,7 +449,9 @@ q {
 
 .woman-menu,
 .man-menu {
-    padding-right: 40px;
+    
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .man-list,
@@ -455,15 +490,21 @@ q {
 
 /* FOOTER */
 
-.footer-container {
-    padding-left: 50px;
-    padding-top: 50px;
-    padding-bottom: 40px;
-  /*  background-image: url(./img/allyson-carter-ygeOg_j4uhQ-unsplash.jpg); */
+.footer-main {
+    display: flex;
+    justify-content: space-between;
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
     background: linear-gradient(180deg, #fff 0%, #beb9b750 100%);
+}
+
+.footer-container {
+    padding-left: 50px;
+    padding-top: 110px;
+    padding-bottom: 20px;
+  /*  background-image: url(./img/allyson-carter-ygeOg_j4uhQ-unsplash.jpg); */
+  
 }
 
 .address-list {
@@ -486,12 +527,52 @@ color: #172530e0;;
 }
 
 
+.social-list {
+    list-style: none;
+    display: flex;
+  
+   
+    padding-right: 50px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+   
+}
+
+.social-links {
+    margin-right: 20px;
+    color: var(--secondary-bg--mode-dark);
+  
+    background-color: transparent;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+ 
+}
+
+.social-links :hover {
+background-color: rgba(100, 148, 237, 0.404);
+}
+
+
+
+.footer-icon {
+    font-size: 32px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+   margin: 0;
+}
+
+
+
+
 /* SLIDER */
 
 .slide-info {
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 110px;
+    padding-top: 110px;
   /*  background: linear-gradient(180deg, #beb9b750 100% 0%, #fff 100%); */
 }
 
@@ -503,6 +584,13 @@ color: #172530e0;;
 
 .slide-about-title {
     padding-top: 35px;
+
+     
+        font-style: normal;
+        font-weight: 800;
+        
+      
+    }
 }
 
 .quality {
@@ -515,7 +603,8 @@ color: #172530e0;;
 
 .quality-list {
     margin-top: 30px;
-    font-size: 26px;
+    font-size: 22px;
+    font-weight: 200;
 }
 
 .quality-icon {
