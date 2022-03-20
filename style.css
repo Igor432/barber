@@ -140,7 +140,7 @@ h1, h2, h3 {
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
-        padding-left: 0 !important;
+        padding: 0 !important;
         padding-right: 26px;
         flex-basis: auto;
     }
@@ -152,7 +152,7 @@ h1, h2, h3 {
         display: block;
         background-color: transparent;
         border: none;
-        margin-left: 20px;
+        margin-left: 10px;
         cursor: pointer;
     }
     .nav-ul,
@@ -188,7 +188,7 @@ h1, h2, h3 {
     }
 
     .about {
-      padding: 50px !important;
+      padding-top 50px !important;
     }
 
     .about-info {
@@ -249,6 +249,21 @@ h1, h2, h3 {
         text-align: center;
         padding-left: 0px !important;
        
+    }
+    .social-list {
+        justify-content: center;
+        text-align: center;
+        padding-left: 45 !important;
+        padding-right: 45 !important;
+       
+    }
+
+    .social-links {
+        margin-left: 20px !important;
+    }
+
+    .social-list:first-child {
+        margin: 0 !important;
     }
 }
 
@@ -530,7 +545,7 @@ color: #172530e0;;
 .social-list {
     list-style: none;
     display: flex;
-  
+
    
     padding-right: 50px;
     padding-left: 40px;
@@ -545,10 +560,11 @@ color: #172530e0;;
     background-color: transparent;
 
     display: flex;
-    text-align: center;
-    justify-content: center;
+
  
 }
+
+
 
 .social-links :hover {
 background-color: rgba(100, 148, 237, 0.404);
@@ -562,6 +578,8 @@ background-color: rgba(100, 148, 237, 0.404);
     height: 50px;
     width: 50px;
    margin: 0;
+  
+  
 }
 
 
