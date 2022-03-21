@@ -132,6 +132,10 @@ h1, h2, h3 {
     font-weight: 500;
     padding-top: 25px;
     padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -152,6 +156,10 @@ h1, h2, h3 {
     .contacts {
         padding-right: 0;
         width: 100%;
+    }
+
+    .contacts-link  {
+        padding-top: 0px !important;
     }
     .hamburger {
         display: block;
@@ -175,6 +183,7 @@ h1, h2, h3 {
         display: flex;
         justify-content: center;
         text-align: center;
+        padding-top: 40px !important;
     }
     .contacts-list {
         gap: 15px !important;
@@ -187,6 +196,8 @@ h1, h2, h3 {
         padding: 0;
         padding-bottom: 20px;
     }
+
+  
 
 .prices-container {
     padding-left: 20px;
@@ -213,8 +224,8 @@ h1, h2, h3 {
     }
 
     .about-title, .quote {
-        justify-content: center !important;
-        text-align: center !important;
+        justify-content: start !important;
+        text-align: start !important;
     }  
 
 .about-photo {
@@ -315,9 +326,7 @@ h1, h2, h3 {
     }
 }
 
-.logo {
-  
-}
+
 
 .logo {
     text-decoration: none;
@@ -565,7 +574,7 @@ q {
 }
 
 .footer-container {
-    padding-left: 50px;
+    padding-left: 30px;
     padding-top: 90px;
     padding-bottom: 20px;
   /*  background-image: url(./img/allyson-carter-ygeOg_j4uhQ-unsplash.jpg); */
