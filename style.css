@@ -212,6 +212,11 @@ h1, h2, h3 {
         padding-top: 100px !important;
     }
 
+    .about-title, .quote {
+        justify-content: center !important;
+        text-align: center !important;
+    }  
+
 .about-photo {
     margin-left: auto;
     margin-right: auto;
@@ -233,13 +238,13 @@ h1, h2, h3 {
     }
     .woman-list>.price-inner-name::after,
     .man-list>.price-inner-name::after {
-        display: none;
+       
         content: "";
         background-color: rgba(114, 116, 117, 0.507);
-        width: 230px;
+        width: 185px;
         height: 1.9px;
         position: absolute;
-        left: 165px;
+        left: 55px;
     }
 
 
@@ -267,6 +272,8 @@ h1, h2, h3 {
        
     }
 
+   
+
     .footer-icon {
         width: 40px;
         height: 40px;
@@ -274,8 +281,7 @@ h1, h2, h3 {
     .social-list {
         justify-content: center;
         text-align: center;
-        padding-left: 45 !important;
-        padding-right: 45 !important;
+       padding: 0 !important;
         display: flex;
        
     }
@@ -289,6 +295,23 @@ h1, h2, h3 {
     social-list-item {
         width: 50px;
         height: 50px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .russian-ship {
+        justify-content: center;
+        text-align: center;
+        padding: 0 !important;
+        padding-bottom: 50px !important;
+    }
+    .yellow-quote {
+        padding-left: 10px !important;
+    }
+    .quote {
+        justify-content: center;
     }
 }
 
@@ -412,8 +435,8 @@ h1, h2, h3 {
     font-size: 14px;
     font-style: normal;
     font-weight: 800;
-    justify-content: center;
-    text-align: center;
+    justify-content: start;
+    text-align: start;
   
 }
 
@@ -528,10 +551,17 @@ q {
 .footer-main {
     display: flex;
     justify-content: space-between;
+ 
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
     background: linear-gradient(180deg, #fff 0%, #beb9b750 100%);
+
 }
 
 .footer-container {
@@ -568,7 +598,7 @@ color: #172530e0;;
 
    margin-top: 30px;
     padding-right: 50px;
-    padding-left: 40px;
+  
     padding-bottom: 50px;
    
 }
@@ -582,6 +612,22 @@ color: #172530e0;;
     display: flex;
 
  
+}
+
+.russian-ship {
+    padding-top: 190px;
+    padding-right: 250px;
+}
+
+.russian-slogan {
+    color: rgba(0, 0, 255, 0.884);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.yellow-quote {
+    color: rgb(211, 211, 86);
+    padding-left: 50px;
 }
 
 
@@ -626,6 +672,8 @@ color: #df6f13;
         
       
     }
+
+    
 }
 
 .quality {
