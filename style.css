@@ -266,8 +266,8 @@ h1, h2, h3 {
         padding-bottom: 35px;
         font-weight: 200;
         padding-bottom: 0 !important;
-        justify-content: center;
-        text-align: center;
+        justify-content: start;
+        text-align: start;
     }
     .slide-info {
         flex-direction: column-reverse;
@@ -734,13 +734,13 @@ img {
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: rgb(54, 46, 46);
+    color: rgb(255, 255, 255);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 38px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    background-color: #bbb;
+    background-color: transparent;
 }
 
 
@@ -756,7 +756,8 @@ img {
 
 .prev:hover,
 .next:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(253, 241, 241, 0.829);
+    color: cornflowerblue;
 }
 
 
