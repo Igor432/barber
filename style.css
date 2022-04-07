@@ -213,14 +213,14 @@ h1, h2, h3 {
 
     .about {
         padding-left: 1px !important;
-      padding-top: 100px !important;
+      padding-top: 80px !important;
     }
 
     .about-info {
         line-height: 1.6;
-        padding-left: 20px!important;
-        padding-right: 20px !important;
-        padding-top: 100px !important;
+        padding-left: 40px!important;
+        padding-right: 40px !important;
+        padding-top: 80px !important;
     }
 
     .about-title, .quote {
@@ -636,7 +636,7 @@ color: #172530e0;;
 
 .yellow-quote {
     color: rgb(211, 211, 86);
-    padding-left: 50px;
+    padding-left: 60px;
 }
 
 
